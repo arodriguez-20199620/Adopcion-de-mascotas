@@ -10,6 +10,7 @@ class Server{
 
         this.conectarDB();
         this.middlewares();
+        this.routes();
 
     }
 
@@ -21,6 +22,10 @@ class Server{
         this.app.use(express.static('public'));
         this.app.use(cors());
         this.app.use(express.json());
+    }
+
+    routes(){
+      
     }
 
     listen(){
